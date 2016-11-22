@@ -9,6 +9,10 @@ import java.io.InputStreamReader;
  */
 public class App 
 {
+	/**
+	 * Dies ist die Main-Methode
+	 * @param args bla blubb arrrrrgs
+	 */
     public static void main( String[] args )
     {	
 		try {

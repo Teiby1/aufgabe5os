@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 
 /**
  * Hello world!
- *
+ * Kommentar jo
  */
 public class App 
 {

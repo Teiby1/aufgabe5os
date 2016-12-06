@@ -5,9 +5,15 @@ import static org.junit.Assert.*;
 
 public class QueueTest {
 	
-	@Test
+	@Test(expected=IllegalStateException.class)
 	public void testQueue() {
 		Queue queue = new Queue(3);
+		
+		queue.enqueue(10);
+		assertEquals(10, queue.dequeue());
+		queue.enqueue(11);
+		assertEquals(11, queue.dequeue());
+		
 		queue.enqueue(1);
 		queue.enqueue(2);
 		queue.enqueue(3);
@@ -23,11 +29,7 @@ public class QueueTest {
 		assertEquals(7, queue.dequeue());
 		assertEquals(9, queue.dequeue());
 		
-		try {
-			queue.dequeue();
-			fail();
-		} catch (Exception e) {
-		}
+		queue.dequeue(); // Queue ist leer
 	}
 
 }

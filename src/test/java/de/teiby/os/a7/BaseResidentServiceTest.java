@@ -12,7 +12,7 @@ import de.teiby.meldeauskunft.service.ResidentServiceException;
 
 public class BaseResidentServiceTest {
 
-//	@Test
+	@Test
 	public void testGetFilteredResidentsList() {
 		BaseResidentService baseResidentService = new BaseResidentService();
 		baseResidentService.setResidentRepository(new ResidentRepositoryStub());
@@ -45,7 +45,7 @@ public class BaseResidentServiceTest {
 
 	}
 
-//	@Test
+	@Test
 	public void testgetUniqueResident() {
 		BaseResidentService baseResidentService = new BaseResidentService();
 		baseResidentService.setResidentRepository(new ResidentRepositoryStub());
